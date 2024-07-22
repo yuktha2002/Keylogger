@@ -180,6 +180,4 @@ This project successfully implements a basic keylogger using Python and the `pyn
 
 This keylogger is intended for educational purposes only. It demonstrates the potential risks and ethical concerns associated with keylogging technology. Unauthorized use of keylogging software is illegal and unethical. Always use such tools responsibly and with permission.
 
----
 
-Feel free to customize this README further to fit your project's specifics. This file provides a comprehensive overview of the project, its objectives, methodologies, requirements, and usage instructions.   
