@@ -94,4 +94,92 @@ The keylogger listens for key releases to determine if the 'esc' key has been pr
 
 #### Listener Initialization
 
-The keyboard listener is set up to run in an event loop, continuously monitoring for key events. It captures both  
+The keyboard listener is set up to run in an event loop, continuously monitoring for key events. It captures both key presses and releases, ensuring that all relevant keyboard activity is logged until the termination condition is met.
+
+## 5. Testing and Validation
+
+### Testing Approach
+
+- **Functional Testing:** Ensure that all keystrokes are captured and logged accurately.
+- **Special Key Handling:** Test handling of special keys such as space, enter, etc.
+- **Termination Testing:** Confirm that the program stops on pressing the 'esc' key.
+
+### Test Cases
+
+- **Basic Key Press:** Press regular keys and check the log file for accuracy.
+- **Special Keys:** Press keys like space and enter and verify the log entries.
+- **Stop Condition:** Press 'esc' and confirm that the keylogger stops logging.
+
+### Validation
+
+- **Log File Inspection:** Verify that the log file contains all captured keystrokes accurately.
+- **Performance:** Check for any delays or missed keystrokes under various typing speeds.
+
+## 6. Results and Evaluation
+
+### Keylogger Performance
+
+The keylogger successfully captures all keystrokes and logs them to a file in real-time. Both regular and special keys are handled as expected. The termination condition (pressing 'esc') works reliably, stopping the keylogger without any issues.
+
+### Log File Quality
+
+The log file contains clear and accurate entries for each keystroke, including special keys represented with meaningful strings. The format is consistent, making it easy to review the captured data.
+
+### Ethical Considerations
+
+This project highlights the potential risks and ethical concerns associated with keylogging technology. It underscores the importance of implementing strong cybersecurity measures to prevent unauthorized use of keyloggers. The tool, while functional, is meant to educate and raise awareness about the dangers of such technology and the critical need for maintaining secure computing practices.
+
+## 7. Limitations
+
+- **Basic Functionality:** The current implementation logs keys in plain text and does not include advanced features like encryption or stealth mode.
+- **Limited Key Handling:** The program only recognizes a limited set of special keys and does not handle complex key combinations.
+
+## 8. Conclusions and Future Work
+
+### Conclusions
+
+This project successfully implements a basic keylogger using Python and the `pynput` library. The keylogger effectively captures and logs keystrokes, handling both regular and special keys. The project demonstrates the feasibility of using Python for basic keylogging tasks and highlights the ethical implications of such tools.
+
+### Future Work
+
+- **Enhanced Key Handling:** Expand the keylogger to handle more special keys and key combinations.
+- **Log Encryption:** Implement encryption for the log file to protect captured data.
+- **Stealth Mode:** Develop the keylogger to run invisibly in the background.
+- **Cross-Platform Testing:** Conduct more extensive testing across different operating systems.
+
+## Installation and Usage Instructions
+
+### Installation
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/yourusername/keylogger.git
+   cd keylogger
+   ```
+
+2. **Install the Required Dependencies:**
+   Make sure you have Python 3.x installed. Then install the `pynput` library:
+   ```bash
+   pip install pynput
+   ```
+
+### Usage
+
+1. **Run the Keylogger:**
+   ```bash
+   python keylogger.py
+   ```
+
+2. **Stopping the Keylogger:**
+   - Press 'esc' to stop the keylogger. This will safely terminate the keylogging process.
+
+3. **Viewing the Log File:**
+   - Open the generated log file (e.g., `keylog.txt`) to view the captured keystrokes.
+
+## Disclaimer
+
+This keylogger is intended for educational purposes only. It demonstrates the potential risks and ethical concerns associated with keylogging technology. Unauthorized use of keylogging software is illegal and unethical. Always use such tools responsibly and with permission.
+
+---
+
+Feel free to customize this README further to fit your project's specifics. This file provides a comprehensive overview of the project, its objectives, methodologies, requirements, and usage instructions.   
